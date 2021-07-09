@@ -10,10 +10,13 @@ follow. Last In First Out (LIFO), and First In Last Out (FILO).
 ### Operations:
 
 Stacks, like lists, have some operators to use. Lists use append and extend as some
-basic operators, and stacks are very similar. Stacks also use append and extend,
-as well as pop. Append, just like in lists, adds things to the bottom of a stack.
-Pop, takes things off the top of a stack. This can also be used in lists to take
-things off the end of the list.
+basic operators, and stacks are very similar. Stacks use append and pop. Append, 
+just like in lists, adds things to the bottom of a stack. Pop, takes things
+off the top of a stack. This can also be used in lists to take  things off 
+the end of the list.
+
+Stacks can also have specific indexes popped. The second example below shows how
+to pop off specific indecies from the stack.
 
 ### Example:
 
@@ -37,4 +40,23 @@ print('This is the stack after everything has been popped: ', stack)
 # 2
 # 1
 # This is the stack after everything has been popped:  []
+```
+
+### Example 2:
+
+```python
+stack2 = []
+stack2.append(1)
+stack2.append(17)
+stack2.append(12)
+stack2.append(57)
+
+print(stack2)
+
+stack2.pop(2)
+print(stack2)
+
+# Expected output:
+# [1, 17, 12, 57]
+# [1, 12, 57]
 ```
