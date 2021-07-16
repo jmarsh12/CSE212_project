@@ -1,11 +1,12 @@
-# Final Project Draft 1
-
 ## Stacks:
 ### Introduction:
 
 What are stacks? Stacks are a type of __list__. Like __lists__, they hold a set of data. 
 However, unlike lists, stacks follow a set order of operations. There are two rules to
-follow. Last In First Out (LIFO), and First In Last Out (FILO).
+follow. Last In First Out (LIFO), and First In Last Out (FILO). One great thing about stacks
+is that they are always O(1) in Big O Notation because they always pop from the end. 
+
+![Stack of books](http://www.bristollib.com/wp-content/uploads/2020/05/stack-of-books-png-large-2.jpg)
 
 ### Operations:
 
@@ -15,8 +16,8 @@ just like in lists, adds things to the bottom of a stack. Pop, takes things
 off the top of a stack. This can also be used in lists to take  things off 
 the end of the list.
 
-Stacks can also have specific indexes popped. The second example below shows how
-to pop off specific indecies from the stack.
+Stacks can also have specific indexes popped. The first problem below will
+pop off specific indecies from the stack.
 
 ### Example:
 
@@ -42,21 +43,33 @@ print('This is the stack after everything has been popped: ', stack)
 # This is the stack after everything has been popped:  []
 ```
 
-### Example 2:
+### Problem 1:
 
 ```python
+
+# TODO: Make this stack pop only index 2 and print the result
 stack2 = []
 stack2.append(1)
 stack2.append(17)
 stack2.append(12)
 stack2.append(57)
 
-print(stack2)
-
-stack2.pop(2)
-print(stack2)
-
 # Expected output:
 # [1, 17, 12, 57]
 # [1, 12, 57]
+```
+
+### Problem 2:
+
+```python
+
+# TODO: Append both numerical values and strings to the stack
+#  pop only the strings off
+stack3 =  []
+
+# Expected output:
+# Output should look something similar to this.
+
+# [1, 2, Sam, John, 3, 4]
+# [1, 2, 3, 4]
 ```
